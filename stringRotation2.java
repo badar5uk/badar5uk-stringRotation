@@ -13,12 +13,12 @@ public class stringRotation2 {
     }
 
     public static boolean areRotation(String firstString, String secondString) {
-        boolean res;
+        boolean check;
         String concString;
         concString = firstString.concat(firstString);
-        System.out.println(concString);
-        res = concString.contains(secondString);
-        return res;
+        check = concString.contains(secondString);
+        System.out.println(check);
+        return check;
     }
 }
 
