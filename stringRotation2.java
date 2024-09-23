@@ -8,18 +8,17 @@ public class stringRotation2 {
         Scanner str2 = new Scanner(System.in);
         System.out.println("Enter second word");
         String secondString = str2.next();
-        char[] array = firstString.toCharArray();
-        char[] array2 = secondString.toCharArray();
-        if (array[array.length - 1] == array2[0]) {
-            for (int i = 0; i < firstString.length(); i++) {
-                firstString = firstString.substring(1) + firstString.charAt(0);
-                array = firstString.toCharArray();
-                array2 = secondString.toCharArray();
-                System.out.println(array);
-                System.out.println("Is a rotation of ");
-            }
-        } else {
-            System.out.println("Not a rotation");
-        }
+        areRotation(firstString, secondString);
+
+    }
+
+    public static boolean areRotation(String firstString, String secondString) {
+        boolean res;
+        String concString;
+        concString = firstString.concat(firstString);
+        System.out.println(concString);
+        res = concString.contains(secondString);
+        return res;
     }
 }
+
