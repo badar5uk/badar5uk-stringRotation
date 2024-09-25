@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class stringRotation2 {
+public class StringRotation2 {
     public static void main(String[] args) {
         Scanner str1 = new Scanner(System.in);
         System.out.println("Enter first word");
